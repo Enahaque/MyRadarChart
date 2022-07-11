@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import MyLineChart from './Components/MyLineChart/MyLineChart';
+import MyPieChart from './Components/MyPieChart/MyPieChart';
+import MyRadarChart from './Components/MyRadarChart/MyRadarChart';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Roll with Recharts</h1>
+      <MyLineChart></MyLineChart>
+      <MyPieChart></MyPieChart>
+      <MyRadarChart></MyRadarChart>
     </div>
   );
 }
